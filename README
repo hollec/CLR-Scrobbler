@@ -1,0 +1,43 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++ CLR Scrobbler -- Command-line Rhapsody Scrobbler +
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INTRO
+----------------------------------------------------
+CLR Scrobbler parses your public Rhapsody RSS feed and submits the recently played tracks to Last.fm.
+
+
+PREREQUISITES
+----------------------------------------------------
+A. ACCOUNTS
+    o Last.fm Account
+    o Rhapsody Account
+
+B. SOFTWARE
+    o python
+    o python-dateutil (Ubuntu package)
+    o python-feedparser (Ubuntu package)
+    o pylast - http://code.google.com/p/pylast/ 
+
+
+SETUP
+----------------------------------------------------
+Edit the clr-scrobbler.py script and set the following variables:
+    o RHAPSODY_FEED_URL
+    o LASTFM_API_KEY
+    o LASTFM_USERNAME
+    o LASTFM_PASSWORD
+
+Give the script executable permission:
+    o chmod u+x ./clr-scrobbler.py
+
+
+USAGE
+----------------------------------------------------
+Run clr-scrobbler.py from a terminal:
+    o $ ./clr-scrobbler.py
+
+
+LICENSE
+----------------------------------------------------
+Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
